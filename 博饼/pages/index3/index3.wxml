@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--index3.wxml-->
 
 <image class='background' src="/pages/index/back.png" mode="aspectFill"></image>
 <view class="q">
