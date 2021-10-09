@@ -5,6 +5,7 @@
   margin-top:10px;
   border-radius: 25px;
   margin-left:10rpx;
+  
 }
 
 .userinfo-avatar {
@@ -27,10 +28,14 @@
   line-height: 200rpx;
 
 } 
-.header text {
-  
-  color: #020202;
-  margin-top: 20rpx;
+.header1 {
+  text-align: center;
+  flex-direction: row;
+  display:flex;
+  height: 150rpx;
+  margin: 0 auto;
+  margin-top: -70px;
+
 } 
 
 
@@ -46,7 +51,21 @@
   margin-left:25rpx;
   margin-right:25rpx;
 }
+.img{
+  top:20rpx;
+ display:flex;
+margin-left: 6px;
+  width: 114rpx;
+  height:114rpx;
+}
+.img0{
+  opacity: 0%;
+  top:20rpx;
+ display:flex;
 
+  width: 114rpx;
+  height:114rpx;
+}
 
 .imgbox2{ 
   margin-top: 40px;
@@ -80,14 +99,17 @@ page{
 }
 .btn0{
  margin-top:10px;
-  border:0 solid #ffffff;
+ border-width: 5px;
+  border-color:white;
   border-radius: 250rpx;
   font-size:0;
   width: 100rpx;
   height:100rpx;
   margin-left:20rpx;
+  background-color:white;
+  opacity: 20%;
 }
-.btn0 image{
+.btn0 image{ 
   top:20rpx;
  display:flex;
  margin-left:-34rpx;
@@ -145,7 +167,7 @@ page{
   left: 0;
   z-index: 9999;
   margin: -370rpx 85rpx;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 36rpx;
   display: flex;
   flex-direction: column;
@@ -156,7 +178,7 @@ page{
   color: #aaa;
   width: 450rpx;
   height: 80rpx;
-  background: #f1f1f1;
+  background:transparent;
   text-align: center;
   border-radius: 12rpx;
   margin-top: 56rpx;
@@ -167,7 +189,17 @@ page{
 .close_mask {
   color: #000;
   position: relative;
-  left: 40%;
+  left: 55%;
   /* top: -82%; */
   font-size: 32rpx;
+}
+.tx{
+  margin-top:40px;
+  display:flex;
+  justify-content: center;
+}
+.tx1{
+  margin-top:90px;
+  display:flex;
+  justify-content: center;
 }
