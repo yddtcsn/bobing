@@ -4,29 +4,34 @@
 </view>
 
 
-  <view class="header">
-  
-    <image src="{{userInfo.avatarUrl}}" class="userinfo" ></image>
+<view class="header">
+    <image src="/pages/index2/touxiang.jpg" class="userinfo" ></image>
 
-    <button class='btn0' bindtap="onShareAppMessage" open-type="share"><image src="/pages/index/待加入成员.png" class="userinfo"></image></button>
-    <button class='btn0'bindtap="onShareAppMessage" open-type="share"><image src="/pages/index/待加入成员.png" class="userinfo" ></image></button>
-    <button class='btn0'bindtap="onShareAppMessage" open-type="share"><image src="/pages/index/待加入成员.png" class="userinfo" ></image></button>
-    <button class='btn0'bindtap="onShareAppMessage" open-type="share"><image src="/pages/index/待加入成员.png" class="userinfo" ></image></button>
-    <button class='btn0'bindtap="onShareAppMessage" open-type="share"><image src="/pages/index/待加入成员.png" class="userinfo"  ></image></button>
-  </view>
+    <button class='btn0' bindtap="onShareAppMessage" open-type="share"></button>
+    <button class='btn0' bindtap="onShareAppMessage" open-type="share"></button>
+    <button class='btn0' bindtap="onShareAppMessage" open-type="share"></button>
+     <button class='btn0' bindtap="onShareAppMessage" open-type="share"></button>
+     <button class='btn0' bindtap="onShareAppMessage" open-type="share"></button>
+    
+ </view>
 
+ <view class="header1">
+  <image  src="/pages/index1/待加入成员.png"class="img0" ></image>
+  <image  src="/pages/index1/待加入成员.png"class="img" ></image><image  src="/pages/index1/待加入成员.png"class="img" ></image><image  src="/pages/index1/待加入成员.png"class="img" ></image><image  src="/pages/index1/待加入成员.png"class="img" ></image><image  src="/pages/index1/待加入成员.png"class="img" ></image>
+ </view>
 
   <view class="modalDlg" wx:if="{{showModal}}">
  
  <view class='close_mask' bindtap="close_mask">X</view>
- <text class="user-motto">剩余奖品一览</text>
+ <image class='background' src="/pages/index2/kuang.jpg" mode="widthFix"></image>
  <text class="space">  </text>
- <text class="user-motto">状元：{{zhuangyuan}}</text>
- <text class="user-motto">对堂：{{duitang}}</text>
- <text class="user-motto">三红：{{sanhong}}</text>
- <text class="user-motto">四进：{{sijin}}</text>
- <text class="user-motto">二举：{{erju}}</text>
- <text class="user-motto">一秀：{{yixiu}}</text>
+ <view class="tx1">状元------------------------{{ zhuangyuan}}</view>
+<view class="tx">对堂------------------------{{ duitang}}</view>
+
+<view class="tx">三红------------------------{{ sanhong}}</view>
+<view class="tx">四进------------------------{{ sijin}}</view>
+<view class="tx">二举------------------------{{  erju}}</view>
+<view class="tx">一秀------------------------{{ yixiu}}</view>
 </view>
 <button class='btn1' bindtap="submit">查看剩余奖品</button>
 <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
@@ -47,8 +52,5 @@
   </view>
 
   <view class="tool">
-    <button class="btn" bindtap="{{!isClicked?'clickMe':''}}"> 摇骰子</button>
+    <button class="btn" bindtap="clickMe"> {{msg}}</button>
   </view>
-
-
-
