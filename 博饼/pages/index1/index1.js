@@ -23,7 +23,7 @@ Page({
     sanhong:4,
     duitang:2,
     zhuangyuan:1,
-
+    msg:'摇骰子',
     winH:50,
     userInfo: {},
     hasUserInfo: false,
@@ -119,8 +119,25 @@ Page({
         opacity: opacity,
         isClicked:true
       });
-       if (idx >= 10) {
-       
+      if(idx>0){
+        that.setData({
+          msg:"等待中."
+        });
+      }
+      if(idx>5){
+        that.setData({
+          msg:"等待中.."
+        });
+      }
+      if(idx>10){
+        that.setData({
+          msg:"等待中..."
+        });
+      }
+       if (idx >= 15) {
+        that.setData({
+          msg:"摇骰子"
+        });
         clearInterval(mytimer);
         mytimer=0;
         console.log("...mytimer="+mytimer) ;
